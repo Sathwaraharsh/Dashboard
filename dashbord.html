@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trading Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Main Container -->
+  <div class="flex min-h-screen">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-gray-900 text-white flex-shrink-0 hidden md:flex flex-col">
+      <div class="p-6">
+        <h1 class="text-3xl font-bold text-center text-green-500">TradeView</h1>
+      </div>
+      <nav class="flex-grow mt-6 overflow-y-auto">
+        <ul>
+          <li class="py-3 px-6 hover:bg-gray-800 rounded-md">
+            <a href="#" class="block">Dashboard</a>
+          </li>
+          <li class="py-3 px-6 hover:bg-gray-800 rounded-md">
+            <a href="#" class="block">Portfolio</a>
+          </li>
+          <li class="py-3 px-6 hover:bg-gray-800 rounded-md">
+            <a href="#" class="block">Market Trends</a>
+          </li>
+          <li class="py-3 px-6 hover:bg-gray-800 rounded-md">
+            <a href="#" class="block">Settings</a>
+          </li>
+        </ul>
+      </nav>
+      <footer class="p-6 text-sm text-center text-gray-400">
+        © 2025 TradeView
+      </footer>
+    </aside>
+
+    <!-- Content Area -->
+    <div class="flex-1 flex flex-col">
+
+      <!-- Top Navigation -->
+      <header class="bg-gray-100 shadow-lg">
+        <div class="flex items-center justify-between px-6 py-4">
+          <h2 class="text-xl font-bold text-green-600">Welcome Back, Trader!</h2>
+          <button class="md:hidden text-gray-800 focus:outline-none">
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- Dashboard Content -->
+      <main class="p-6 flex-grow bg-gray-50">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Card 1: Total Profit -->
+          <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl border-t-4 border-green-500">
+            <h3 class="text-lg font-bold text-green-700">Total Profit</h3>
+            <p class="text-3xl font-semibold mt-2">$12,500</p>
+          </div>
+          <!-- Card 2: Total Loss -->
+          <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl border-t-4 border-red-500">
+            <h3 class="text-lg font-bold text-red-700">Total Loss</h3>
+            <p class="text-3xl font-semibold mt-2">-$3,200</p>
+          </div>
+          <!-- Card 3: Portfolio Value -->
+          <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl border-t-4 border-green-500">
+            <h3 class="text-lg font-bold text-green-700">Portfolio Value</h3>
+            <p class="text-3xl font-semibold mt-2">$45,800</p>
+          </div>
+          <!-- Card 4: Daily Gains -->
+          <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl border-t-4 border-green-500">
+            <h3 class="text-lg font-bold text-green-700">Daily Gains</h3>
+            <p class="text-3xl font-semibold mt-2">$1,250</p>
+          </div>
+          <!-- Card 5: Daily Losses -->
+          <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl border-t-4 border-red-500">
+            <h3 class="text-lg font-bold text-red-700">Daily Losses</h3>
+            <p class="text-3xl font-semibold mt-2">-$430</p>
+          </div>
+          <!-- Card 6: Open Positions -->
+          <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl border-t-4 border-green-500">
+            <h3 class="text-lg font-bold text-green-700">Open Positions</h3>
+            <p class="text-3xl font-semibold mt-2">15</p>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="bg-gray-100 shadow-md p-4 text-center">
+        <p class="text-gray-600">© 2025 TradeView Dashboard. All Rights Reserved.</p>
+      </footer>
+    </div>
+  </div>
+
+</body>
+</html>
